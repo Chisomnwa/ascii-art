@@ -38,6 +38,14 @@ ascii-art/
 └── ascii/
     └── render.go
 
+ascii-art/
+├── main.go
+├── standard.txt
+├── shadow.txt
+├── thinkertoy.txt
+└── ascii/
+    └── render.go
+
 **Explanation:**
 * main.go: handles input (os.Args)
 * banner text files: has the ASCII templates
@@ -112,4 +120,21 @@ Input ---> |  main.go    |
                    v
               OUTPUT
 
+-------------------------------
 
+User Input
+   │
+   ▼
+main.go
+   │
+   ▼
+ReadBanner()
+   │
+   ▼
+BuildAsciiMap()
+   │
+   ▼
+PrintAscii()
+   │
+   ▼
+ASCII Art Output
