@@ -28,6 +28,7 @@ Repeat until line8
 This is the **core algorithm**
 
 ## Folder Structure
+```text
 ascii-art/
 │
 ├── main.go
@@ -37,7 +38,9 @@ ascii-art/
 │
 └── ascii/
     └── render.go
+```
 
+```console
 ascii-art/
 ├── main.go
 ├── standard.txt
@@ -45,6 +48,7 @@ ascii-art/
 ├── thinkertoy.txt
 └── ascii/
     └── render.go
+```
 
 **Explanation:**
 * main.go: handles input (os.Args)
@@ -96,6 +100,7 @@ Why 9?
 - Then it prints the ASCII representation line by line for the entire string.
 
 ## Simple Visual of Program Flow
+```text
            +-------------+
 Input ---> |  main.go    |
            +-------------+
@@ -119,8 +124,9 @@ Input ---> |  main.go    |
                    |
                    v
               OUTPUT
-
+```
 -------------------------------
+```console
 
 User Input
    │
@@ -138,3 +144,4 @@ PrintAscii()
    │
    ▼
 ASCII Art Output
+```
