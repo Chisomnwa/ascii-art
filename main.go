@@ -1,19 +1,19 @@
 package main
 
 import (
-	"fmt"
 	"os"
+	"fmt"
+	"ascii-art/ascii")
 
-	"ascii-art/ascii"
-)
 
 func main() {
-
 	/*
-		This function reads the user input from os.Args and sends it to the Render
-		function which handles the ASCII art generation.
+	Reads the user input from 0s.Args and sends it to the render 
+	function which handles the ASCII art generation
 	*/
 	if len(os.Args) != 2 {
+		fmt.Println("Incorrect number of arguments")
+		fmt.Println("Usage: go run . <input string> | cat e")
 		return
 	}
 
@@ -27,5 +27,7 @@ func main() {
 
 	asciiMap := ascii.BuildAsciiMap(bannerLines)
 
-	ascii.PrintAscii(input, asciiMap)
+	result := ascii.PrintAscii(input, asciiMap)
+
+	fmt.Print(result)
 }
