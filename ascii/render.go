@@ -66,5 +66,9 @@ func PrintAscii(text string, asciiMap map[rune][]string) string {
 				result.WriteString(asciiMap[char][row])
 			}
 			result.WriteString("\n")
-}
+		}
+	}
+
+	// Retrieve and return the final accumulated string
+	return result.String()
 }
